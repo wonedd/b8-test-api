@@ -57,7 +57,7 @@ app.post("/favorites", (req, res) => {
     return res.status(400).json({ error: "Product not found" });
   }
 
-  product.favorite = true;
+  product.favorite = !product.favorite;
 
   return res.status(200).json(product);
 });
