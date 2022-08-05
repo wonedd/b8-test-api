@@ -63,4 +63,4 @@ app.post("/favorites", (req, res) => {
 });
 
 
-app.listen(3001);
+app.listen(process.env.PORT || 3000);
